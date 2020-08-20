@@ -25,6 +25,12 @@ class Form extends React.Component {
     this.sendFormDataSomewhere(formData)
   }
 
+  listOfSubmissions = () => {
+    return this.state.submittedData.map(data => {
+      return <div><span>{data.firstName}</span><span>{data.lastName}</span></div>
+    })
+  }
+
   render() {
     return (
       <form onSubmit={event => this.handleSubmit(event)}>
