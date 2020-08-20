@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from './Form'
+import DisplayData from './DisplayData'
 
 class ParentComponent extends React.Component {
   state = {
